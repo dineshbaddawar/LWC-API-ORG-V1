@@ -1,0 +1,12 @@
+<template>
+   
+    <lightning-card title="Result of the query">
+       
+        <div class="slds-p-around_medium">
+            <p>Exported {numberOfRecord} records</p>
+            <template lwc:if={isDataLoad}>
+                <lightning-datatable key-field="id1" data={data} onrowselection={handleRowSelection} columns={cols}></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>
