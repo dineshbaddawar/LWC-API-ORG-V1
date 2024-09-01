@@ -1,0 +1,104 @@
+{
+	"name": "vscode-author-generator",
+	"displayName": "vscode-author-generator",
+	"description": "A Tool To Generate Author Info",
+	"version": "0.2.2",
+	"publisher": "edwardhjp",
+	"author": "xiaoping(edwardhjp@gmail.com)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/excaliburhan/vscode-author-generator.git"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.generateAuthorInfo",
+		"onCommand:extension.updateAuthorInfo",
+		"onStartupFinished"
+	],
+	"main": "./dist/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.generateAuthorInfo",
+				"title": "Generate Author Info"
+			},
+			{
+				"command": "extension.updateAuthorInfo",
+				"title": "Update Author Info"
+			}
+		],
+		"keybindings": {
+			"command": "extension.updateAuthorInfo",
+			"key": "ctrl+u",
+			"mac": "cmd+u",
+			"when": "editorTextFocus"
+		},
+		"configuration": {
+			"type": "object",
+			"title": "author generator configuration",
+			"properties": {
+				"author-generator.author": {
+					"type": "string",
+					"default": "[author]",
+					"description": "author name"
+				},
+				"author-generator.email": {
+					"type": "string",
+					"default": "[example@mail.com]",
+					"description": "email address"
+				},
+				"author-generator.dateFormat": {
+					"type": "string",
+					"default": "YYYY-MM-DD HH:mm:ss",
+					"description": "date format string based on moment.js"
+				},
+				"author-generator.updateOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "trigger updateInfo on save"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"build:js": "rollup -c rollup.config.js",
+		"build": "vsce package",
+		"publish": "vsce publish"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.13.10",
+		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-commonjs": "^17.1.0",
+		"@rollup/plugin-node-resolve": "^11.2.0",
+		"@types/node": "^12.12.21",
+		"eslint": "^6.7.2",
+		"rollup": "^2.41.0",
+		"rollup-plugin-eslint": "^7.0.0",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"typescript": "^3.7.3",
+		"vscode": "^1.1.36"
+	},
+	"dependencies": {
+		"moment": "^2.24.0"
+	},
+	"__metadata": {
+		"id": "d71e3b36-ce15-4d85-9a47-92cdebbdaab3",
+		"publisherId": "9353aecc-107f-484c-b0a9-46d4ad335301",
+		"publisherDisplayName": "edwardhjp",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1723285121125,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

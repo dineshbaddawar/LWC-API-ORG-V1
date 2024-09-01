@@ -1,0 +1,51 @@
+{
+	"name": "visualforce",
+	"displayName": "Visualforce",
+	"description": "Salesforce Visualforce",
+	"version": "1.0.2",
+	"publisher": "JohnAaronNelson",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"icon": "images/new-logo.png",
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "visualforce",
+				"aliases": [
+					"Visualforce",
+					"visualforce"
+				],
+				"extensions": [
+					".page",
+					".email",
+					".component"
+				],
+				"configuration": "./visualforce.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "visualforce",
+				"scopeName": "text.visualforce.basic",
+				"path": "./syntaxes/visualforce.plist"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "94e79470-d1ee-47f8-9eb0-33cfbee196c9",
+		"publisherId": "455301ea-1fd3-4f22-bc69-9c4cdb15c9d9",
+		"publisherDisplayName": "JohnAaronNelson",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1723285130593,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

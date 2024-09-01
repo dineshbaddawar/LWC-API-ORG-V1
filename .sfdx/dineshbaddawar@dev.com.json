@@ -1,0 +1,12 @@
+{
+  "username": "dineshbaddawar@dev.com",
+  "accessToken": "f82676dd7ed16191c1eea12c6d871400c75cfdc9b28e50b52229f46968e034c3e9634b78d0e3d408df10fdbd96a0b1b57a2a7847bc2f431bb78976e88df4f1016edeffb281903659b40b6cf4893b0c236a0b90d710b6382b9ce15008ce35f1d5459cfa3632c6a698168f27f53439e85963b258749d45:4c6bd3608dbcfe5eb472c69adab21cab",
+  "instanceUrl": "https://dinesh-dev-dev-ed.my.salesforce.com",
+  "orgId": "00D5j000002XWmhEAG",
+  "loginUrl": "https://login.salesforce.com/",
+  "refreshToken": "0b811efd730eef7f4ff173388035d2c9fe976f94709aeb0c80772f2fd2e2b2f399ecbfe840e6d4d2fde2aef2f18ca3132727bd51e3120bc6b09bd0acc2bce5a33a5056380bb9ad364f7ababdf113b85f90ff741df49a4758a9a45aac18:e0f1ed7bfa3f53de02494b70d7f692fd",
+  "clientId": "PlatformCLI",
+  "isDevHub": true,
+  "instanceApiVersion": "61.0",
+  "instanceApiVersionLastRetrieved": "8/10/2024, 11:44:52 PM"
+}

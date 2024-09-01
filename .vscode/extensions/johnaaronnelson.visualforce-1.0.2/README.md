@@ -1,0 +1,2 @@
+# Visualforce (Salesforce) Syntax highlighting for Visualforce pages
+![Visualforce Syntax highlighting](https://github.com/Celador/vscode-visualforce-extension/raw/master/images/example.png "Visualforce Syntax highlighting")
