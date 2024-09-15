@@ -5,7 +5,7 @@ public with sharing class ChatGPT {
     @AuraEnabled
     public static String getChatGPTResult(String searchString){
         try{
-            String Apikey = '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';
+            String Apikey = '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';    //'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';
             String seachQueryEscaped = (searchString).trim();
             System.debug('seachQueryEscaped ::'+seachQueryEscaped);
             Http http = new Http();
